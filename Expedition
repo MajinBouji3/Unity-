@@ -1,0 +1,312 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    string name, start, a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20;
+    int number;
+    
+    cout << "Before we begin there is one rule: the answers to the questions are in the single quotes ''" << endl;
+     cout << "Ok lets begin what is your name" << endl;
+     
+     cin >> name;
+     
+     cout << "Nice to meet you " << name << endl;
+     cout << "okay " << name << " are you ready for a guessing game?" << endl;
+     cin >> start;
+    if(start == "yes")
+    {
+        cout <<"Ok then lets begin" << endl;
+        cout << "Pick a number 1 or 2 and go on your quest" << endl;
+        cout << "-----------------------------------------" <<endl;
+        cin  >> number;
+    }
+    if(number == 1)
+    {
+        cout << "A wolf has appeared infront of you" << endl;
+        cout << "'run' or 'fight'" <<endl;
+        cout << "----------------" << endl;
+        cin >>a1;
+        
+    if(a1 == "run")
+    {
+        cout << "Good job you got away from the wolf" << endl;
+        cout << " " << endl;
+        cout << "After retreating you see an explosion from a far distance" << endl;
+        cout << " " << endl;
+        cout << "'go-to-explosion' or 'leave'" << endl;
+        cout << "----------------------------" <<endl;
+        cin >> a2;
+        
+        if(a2 == "go-to-explosion")
+        {
+            cout << "you arrive at the scene and see a black puddle" << endl;
+            cout << " " <<endl;
+            cout << "As you stare the puddle starts to boil" << endl;
+            cout << " " <<endl;
+            cout << " 'wait' or 'approach'" << endl;
+            cout << "-------------------- " <<endl;
+            cin >>a3;
+            
+        if(a3 == "approach")
+        {
+            cout << "You approach the black puddle and a ginourmous hand crushes you" << endl;
+            cout << "You got clapped bruh" <<endl;
+            
+            return 0;
+        }
+        
+        if(a3 == "wait")
+        {
+            cout << "As you watch from a distance a giant hand emrges from the puddle and tries to crush you" << endl;
+            cout << " " <<endl;
+            cout << "but you dodge succesfully" <<endl;
+            cout << " " <<endl;
+            cout << "You see a rocket launcher on the ground that can tame this beast" << endl;
+            cout << " " <<endl;
+            cout << "'equip-launcher' or 'retreat' " << endl;
+            cout << "----------------------------- " <<endl;
+            cin >> a5;
+            
+            if(a5 == "equip-launcher")
+            {
+                cout << "You use the launcher exploading the beast into pieces" << endl;
+                cout <<"Well done you survived" << endl;
+                 return 0;
+            }
+            
+            if(a5 == "retreat")
+            {
+                cout << "As you try to run away from this monster he quickly grabs you and brings you into his black puddle" <<endl;
+                cout << "You are dead" << endl;
+                
+                return 0;
+            }
+        }
+        
+        }
+    }
+    
+    if(a2 == "leave")
+    {
+        cout << "As you attempt to leave two wolves surround you" << endl;
+        cout << " " << endl;
+        cout << "You see a bat that you can use to defend yourself nearby" << endl;
+        cout << " " << endl;
+        cout << "'equip-bat' or 'flee'" << endl;
+        cout << "---------------------" << endl;
+        cin >> a4;
+        
+        if(a4 == "flee")
+        {
+                cout <<"You try to flee from the hungry dynamic duo" << endl;
+                cout << " " <<endl;
+                cout << "but eventually get captured and turned to food" <<endl;
+                cout << " " << endl;
+                cout << "You are dead" <<endl;
+                
+                return 0;
+        }
+        
+        if(a4 == "equip-bat")
+        {
+            cout << "You fight off the scary wolves with your bat and they run away scared" << endl;
+            cout << " " << endl;
+            cout << "But your worries are not over" << endl;
+            cout << "As you look in directon of the explosion" << endl;
+            cout << "You witness what looks like a black meteor heading your way" << endl;
+            cout << " " << endl;
+            cout << "The meteor smashes right infront of you" << endl;
+            cout << " " <<endl;
+            cout << "It turns into a black puddle?" <<endl;
+            cout << " " <<endl;
+            cout << "'approach' or 'wait'" <<endl;
+            cout << "--------------------" <<endl;
+            cin >> a6;
+            
+            if(a6 == "wait")
+            {
+                cout << "A hazardous ball is hurled towards you and you have no defense" << endl;
+                cout << " " <<endl;
+                cout << "You get covered in black ooze and melt away" << endl;
+                cout << " " <<endl;
+                cout << "You are dead" <<endl;
+                
+                return 0;
+            }
+            
+            if(a6 == "approach")
+            {
+                cout << "As you appraoch a gigantic hand appears from the black puddle and tries to crush you" <<endl;
+                cout <<" "<<endl;
+                cout << "But you swing the bat with might and do enough damage to gain some distance" <<endl;
+                cout << " " <<endl;
+                cout << "You retreat from the beast" << endl;
+                cout << " " <<endl;
+                cout << "You survived" << endl;
+                
+                return 0;
+            }
+            
+        }
+    }
+
+    if(a1 == "fight")
+    {
+            cout << "You die a horrible death due to the wolf shredding you to bits" << endl;
+            cout << "Moral of the story don't fight wolves" << endl;
+            
+            return 0;
+    }
+    
+    }
+    if(number == 2)
+    {
+        cout <<"You wander into a room and see a box on the floor" << endl;
+        cout <<"'open' or 'keep-moving" << endl;
+        cout <<"----------------------" <<endl;
+        cin >> a2;
+    
+    
+    if(a2 == "open")
+    {
+        cout << "You find a very powerful weapon and add it to your inventory!" << endl;
+        cout << "As you leave the room you see a myserious door that was not there before" << endl;
+        cout << "Do you enter?" <<endl;
+        cout << "'yes' or 'no'" <<endl;
+        cout << "-------------" << endl;
+        cin >> a7;
+        
+        if(a7 == "yes")
+        {
+            cout << "You enter the room and there's a man sitting ominously" <<endl;
+            cout << "The man says he has been waiting for you and gets up slowly with nunchucks in his hand" <<endl;
+            cout << "He stares at you and charges at  with a deadly strike" << endl;
+            cout << "'defend' or 'flee'" <<endl;
+            cout << "------------------" <<endl;
+            cin >> a8;
+            
+            if(a8 == "defend")
+            {
+                cout << "You block his strike with ease because of your mighty sword" <<endl;
+                cout <<"He looks as if he is wide open" <<endl;
+                cout << "'counter-strike' or 'wait'" <<endl;
+                cout << "--------------------------" <<endl;
+                cin >>a10;
+                
+                if(a10 == "counter-strike")
+                {
+                    cout <<"with one deadly counter strike to the body you finish off the man" <<endl;
+                    cout << " " <<endl;
+                    cout << "he drops his nunchucks" <<endl;
+                    cout <<"do you take them?"<< endl;
+                    cout << "yes or no" <<endl;
+                    cout << "---------" << endl;
+                    cin >>a11;
+                    
+                    if(a11 == "yes")
+                    {
+                        cout <<"You add nunchucks to your inventory" << endl;
+                        cout << "  " << endl;
+                        cout << "As you pick up your new weapons a portal appears" <<endl;
+                        cout << "'enter' or 'leave'" <<endl;
+                        cout << "------------------" <<endl;
+                        cin >> a12;
+                        
+                        if(a12 == "enter")
+                    {
+                            cout <<"You enter a portal and see a new world emerge before your eyes" <<endl;
+                            cout <<"'explore' or 'return'" << endl;
+                            cout <<"---------------------" << endl;
+                            cin >> a13;
+                            
+                            if(a13 == "explore")
+                            {
+                                cout << "you explore this new world and find an abandoned house" <<endl;
+                                cout << "suddenly you hear a cry for help" <<endl;
+                                cout <<"'enter' or 'leave'" << endl;
+                                cout <<"------------------" <<endl;
+                                cin >> a14;
+                                
+                                if(a14 == "enter")
+                                {
+                                    cout <<"you enter the house and see a 7 foot witch" <<endl;
+                                    cout <<"She rushes towards you looking to end you with one strike" <<endl;
+                                    cout <<"'block' or 'dodge'" <<endl;
+                                    cin >> a15;
+                                    
+                                    if(a15 == "block")
+                                    {
+                                        cout <<"You sucessfully block the attack with your sword" <<endl;
+                                    }
+                                    
+                                }
+                            }
+                        
+                    }
+                        
+                    }
+                    
+                    if(a11 == "no")
+                    {
+                        cout << "you leave nunchucks" <<endl;
+                    }
+                    
+                
+                }
+            }
+            
+            if(a8 == "flee")
+            {
+                cout << "As you try to flee the man swiftly blocks your path" <<endl;
+                cout << "he delivers a crushing blow with his nunchucks and finsihes you off" <<endl;
+                cout << "You are dead" << endl;
+                
+                return 0;
+            }
+            
+        }
+        
+        if(a7 == "no") 
+        {
+            cout << "You leave the door be and it disapears into thin air" <<endl;
+            cout << " " <<endl;
+            cout <<"You walk pass a dark room and just as you pass a ghost emrges from the room"<<endl;
+            cout <<" "<<endl;
+            cout <<" He reaches out his hand and says trust me" << endl;
+            cout << " " <<endl;
+            cout << "'leave','fight','trust-him'" <<endl;
+            cout << "---------------------------" << endl;
+            cin >> a9;
+            
+            if(a9 == "fight")
+            {
+                cout << "You try to strike the ghost but he is unphased and angered by this action" <<endl;
+                cout << "he leaves you alone" <<endl;
+            }
+            
+            if(a9 == "leave")
+            {
+                cout << "you leave and the ghost looks as if he had something valuable to give" <<endl;
+            }
+            
+            if(a9 == "trust-him")
+            {
+                cout << "You trust the ghost and he gives you a bit of knowledge for the road ahead" << endl;
+                cout << "You are gratefull" <<endl;
+            }
+        }
+    
+    }
+     if(a2 == "keep-moving")
+    {
+        cout << "You may have missed out on a big opportunity" << endl;
+    }
+    
+  
+    
+    }
+   
+        
+    return 0;
+}
